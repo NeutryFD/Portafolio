@@ -1,3 +1,4 @@
+body{margin: 5%}
 /********** Main ************/
 /****** inicio ******/
 .inicio_ {
@@ -13,51 +14,24 @@
     text-align: center;
 }
 
-.navselect_info {
+.select_info {
     display: flex;
+}
+
+.select{
     border-style: solid;
-}
+    width: 30%}
 
-.navselect {
-    width: 30;
-}
+.nav_option{
+    display: block}
 
-.info {
+.info_{
     width: 70%;
-    border-style: solid;
-
+    height: 500px;
+    padding: 2%;
 }
-
-a {
-    display: inline-block;
-    width: 50px;
-    text-decoration: none;
+.info_ .conteiner_info_primero{background-color: orange;
+height: 100%;
 }
-
-nav,
-scroll-container {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
-
-nav {
-    width: 339px;
-    padding: 5px;
-}
-
-scroll-container {
-    display: block;
-    width: 350px;
-    height: 200px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-}
-
-scroll-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    font-size: 5em;
-}
+.info_ .conteiner_info_segundo {background-color: red;
+height: 100%}
