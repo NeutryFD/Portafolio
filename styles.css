@@ -1,43 +1,63 @@
 /********** Main ************/
 /****** inicio ******/
-.inicio_{ border-style: solid;
-            width: 70%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 4%;
-            padding: 2%;
-        }
+.inicio_ {
+    border-style: solid;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    padding: 2%;
+}
 
-.name{ text-align: center;
+.name {
+    text-align: center;
+}
+
+.navselect_info {
+    display: flex;
+    border-style: solid;
+}
+
+.navselect {
+    width: 30;
+}
+
+.info {
+    width: 70%;
+    border-style: solid;
 
 }
+
 a {
     display: inline-block;
     width: 50px;
     text-decoration: none;
-  }
-  nav, scroll-container {
+}
+
+nav,
+scroll-container {
     display: block;
     margin: 0 auto;
     text-align: center;
-  }
-  nav {
+}
+
+nav {
     width: 339px;
     padding: 5px;
-    border: 1px solid black;
-  }
-  scroll-container {
+}
+
+scroll-container {
     display: block;
     width: 350px;
     height: 200px;
     overflow-y: scroll;
     scroll-behavior: smooth;
-  }
-  scroll-page {
+}
+
+scroll-page {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     font-size: 5em;
-  }
-  
+}
