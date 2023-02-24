@@ -19,19 +19,20 @@ body{margin: 5%}
 }
 
 .select{
+    position: fixed;
     border-style: solid;
-    width: 30%}
+    width: 20%;
+    padding: 0.5;}
 
 .nav_option{
     display: block}
 
 .info_{
+    margin-left: 30%;
     width: 70%;
-    height: 500px;
     padding: 2%;
 }
-.info_ .conteiner_info_primero{background-color: orange;
-height: 100%;
-}
-.info_ .conteiner_info_segundo {background-color: red;
-height: 100%}
+.info_ .conteiner_info_primero{background-color: orange;}
+.info_ .conteiner_info_segundo {background-color: red;}
+
+.info_ .conteiner_info_tercero {background-color: green;}

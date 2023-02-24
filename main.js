@@ -1,6 +1,4 @@
-const primero = documento.querySelector('.primero')
-const segundo = document.querySelector('.segundo')
-
-primero.addEventListener('click',() => {
-
-})
+$("button").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".second").offset().top},
+        'slow');
