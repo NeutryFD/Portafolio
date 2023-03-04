@@ -13,6 +13,12 @@ body {
     padding: 0;
     margin: 0;
 }
+.inicio_contenedor{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    grid-template-columns:35% auto;
+}
 /************************** home ********************************************/
 /*region pinguine image*/
 .home{
@@ -26,24 +32,26 @@ body {
     background-size: cover;
     background-image: url("images/wallaper_home_2.png");
 }
-.conteiner_home{
+
+
+.conteiner_image_name{
     position: sticky;
     margin-left: 30%;
     color: #FFFFFF;
 }
-.conteiner_home h1{
+.conteiner_image_name h1{
     font-size: 4vw;
     padding-top: 5%;
     margin: 0}
-.conteiner_home h2{
+.conteiner_image_name h2{
     font-size: 2vw
 }
-.conteiner_home strong{
+.conteiner_image_name strong{
     font-size: 3vw;
     text-transform:uppercase;
 }
 /*endregion*/
-/*region tic | */
+/*region tic*/
 .tic{
 
     animation-name: tic;
@@ -75,86 +83,90 @@ body {
 }
 /*endregion*/
 /*************************** about ********************************************/
+/*region About*/
 .container_secctions_about{
-    margin-left:1%;
-    height: 100%;
+    min-height: 100vh;
 }
-.conteiner_edu_exp h1{
-    margin-left: 2%;
+.about_me p{
+    margin: 0 auto;
+    width: 50%;
+    text-align: justify;
 }
 .about_me{
-    margin-top: 5%;
-    text-align: justify-all;
-}
-.edu{
-    padding-left: 5%;
-    display:inline-flex;
-}
-.edu img{
-    width: 50%;
-    padding:2%}
-.insti ,.uni{
-    padding: 2px;
-    margin: 5%;
-    border-style: solid ;
-    border-color: #0BBC5C;
-    border-width: 1px;
-    display: block;
     text-align: center;
-    border-radius: 5px;
+    padding-top: 2%;
 }
-.exp {
-    display: inline-flex;
+.about_me h2{
+    font-size: 4vh;
+}
+.conteiner_edu_exp{
+    padding: 1%;
+    margin-top: 5%;
+    display: flex;
+}
+.edu , .exp{
     border-style: solid;
     border-width: 1px;
     border-color: #0BBC5C;
-    margin-left: 28%;
-    padding: 0.5%;
+    padding: 2%;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 5px;
+    scale: 1.2;
 }
-.wood,.practice{
-    display: table;
+.edu img{
+    width: 60%;
+    padding:2%
 }
-
-.wood{
-    width: 38%;
-    padding-right: 50px;
-}
-.practice{
+.insti{
+    margin-bottom: 10%;
+    border-bottom-style: solid;
     border-color: #0BBC5C;
-    padding-left: 1%;
-    border-left-style: solid;
-    border-left-width: 1px;
 }
+.insti ,.uni{
+    display: block;
+    text-align: center;
+}
+.wood{
+    border-bottom-style: solid;
+    padding-bottom: 10%;
+    border-color: #0BBC5C;
+}
+/*endregion*/
 /*************************** linsk_icons *************************************/
 /*region links_icons*/
 .icons_links{
-    padding-top: 6px;
-    text-align:center;
-    border-radius: 5px;
-    background-color: #FFFFFF;
-    opacity: 0.4;
-    position: fixed;
-    margin-left: 95%;
-    margin-right: 2%}
-
-.icons_links a img{
-    width: 80%;
-    padding: 2%;
+    margin-top: 300% ;
+    margin-left: 10%;
+    margin-right: auto;
+    width: 90%;
+    height: 20%;
 }
-/*endregion*/
-
-
-/*region nav*/
-.inicio_contenedor{
-    width: 100%;
+.icon{
+    border-radius: 8px;
+    opacity: 0.6;
     margin: 0 auto;
-    display: block;
-    grid-template-columns:30% auto;
+    height: 50%;
+    transition: all 300ms;
 }
+.icon a img{
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+}
+
+.icon:hover{
+    transform: scale(1.1);
+}
+
+/*endregion*/
+/************************** nav Index *******************************************/
+/*region nav*/
 h3{
     padding-top: 100%;
     color: #FFFFFF;
 }
+
 .container_index {
     padding: 1.5%;
     display: block;
@@ -205,52 +217,60 @@ aside .list li:hover::before {
     border: 2px solid #0BBC5C;
 }
 /*endregion*/
-
 /*************************** secctions **************************************/
 
 .container_secctions{
     min-height: 100vh;
-    border-style: solid;
     padding-left: 9%;
 }
 
 /************************************* resume **************************************************/
 /*region Skills*/
-.conteiner_resume{
-    height: 1000px;
+.conteiner_skills{
+    height: 100vh;
 }
 .item {
+    text-align: center;
+    background-color: #EFEFEF;
     border-color: #0BBC5C;
+    border-radius: 8px;
     border-width: 1px;
     border-style: solid;
-    padding: 3%;
-    margin: 3%;
+    margin: 1%;
+    padding-top: 15%;
+    transition: all 300ms;
+}
+.item p{
+    text-align: justify;
+    padding: 5%;
+}
+.item:hover{
+    transform: scale(1.02);
 }
 .grid_skill{
+    padding-top: 0.5%;
     padding-left: 10%;
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 470px 470px;
+    grid-template-rows: 425px;
 }
-.item-4{
+.item-1{
+    margin: 1%;
+    padding-top: 9%;
     grid-column-start: 1;
     grid-column-end: 3;
 }
-
-.conteiner_imganes_ddbb,.conteiner_imganes_progra,.conteiner_imganes_hw, .conteiner_imganes_net{
-    text-align: center;
+.item img{
+    width: 30%;
 }
-.conteiner_imganes_ddbb img,.conteiner_imganes_progra img{
-    width: 40%;
+.item-1 img{
+    width: 10%;
 }
-.conteiner_imganes_hw img{
-    width: 60%;
+.item-3{
+    padding-top: 2%;
 }
-.conteiner_imganes_net img{
-    width: 70%;
-}
-.conteiner_imganes_sysad img{
-    width: 15%;
+.item-3 img,.item-4 img{
+    width: 55%;
 }
 /*endregion*/
 
